@@ -18,3 +18,7 @@ footer{
 section {
     padding-top: 5rem;
 }
+
+button {
+    background-color: #1f6645 !important;
+}
