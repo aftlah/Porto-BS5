@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portofolio BS5</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body id="home">
+<body id="home" class="overflow-x-hidden">
 
     <!-- Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #1f6645;">
@@ -43,7 +44,7 @@
     <!-- Navbar End-->
 
     <!-- Hero Start -->
-    <div class="jumbotron text-center ">
+    <div class="jumbotron text-center mb-5">
         <img src="img/img.jpeg" alt="" width="200px" class="rounded-circle shadow-lg">
         <h1 class="display-6 pt-2">Hallo, Im</h1>
         <h2 class="display-6 ">Altaf Fattah Amanullah</h2>
@@ -58,25 +59,20 @@
     <!-- Hero End -->
 
     <!-- About Start -->
-    <section id="about">
+    <section id="about" data-aos-easing="ease-in-out">
         <div class="container">
             <div class="row">
-                <div class="col text-center mb-4">
+                <div class="col text-center mb-4 mt-5" data-aos="fade-down" data-aos-duration="1000">
                     <h2>About Me</h2>
                 </div>
             </div>
-            <div class="row text-center fw-medium">
-                <div class="col-md-4">
+            <div class="row text-center fw-medium justify-content-center">
+                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa quasi iste excepturi
-                        quae nisi vero laudantium sequi quo.</p>
+                        quae nisi vero laudantium sequi quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde laudantium earum nulla sequi aperiam, placeat rerum nam veniam, architecto in totam quas repellendus accusantium sit harum doloremque odio aut cum.</p>
                 </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente incidunt aliquid in
-                        nesciunt. Voluptate assumenda dolor tempore at natus soluta! Recusandae similique deserunt quam.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente incidunt aliquid in
+                <div class="col-md-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque quam atque in dignissimos itaque praesentium odit. Doloremque, consequuntur! Cumque sunt eaque ut sint placeat quos alias molestias asperiores quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente incidunt aliquid in
                         nesciunt. Voluptate assumenda dolor tempore at natus soluta! Recusandae similique deserunt quam.
                     </p>
                 </div>
@@ -93,14 +89,14 @@
     <!-- Projects Start -->
     <section id="projects">
         <div class="container">
-            <div class="row text-center mb-3">
-                <div class="col">
+            <div class="row text-center mb-4">
+                <div class="col" data-aos-duration="1000" data-aos="fade-down">
                     <h2>My Projects</h2>
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card  gallery-img">
                         <img src="img/1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -108,8 +104,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-img">
                         <img src="img/2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -117,8 +113,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card  gallery-img">
                         <img src="img/3.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -126,8 +122,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-img">
                         <img src="img/4.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -135,8 +131,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-img">
                         <img src="img/5.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
@@ -144,9 +140,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card">
-                        <img src="img/3.jpg" class="card-img-top" alt="...">
+                <div class="col-md-4 mb-4">
+                    <div class="card gallery-img">
+                        <img src="img/3.jpg" class="card-img-top " alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
@@ -163,16 +159,17 @@
     </section>
     <!-- Projects End -->
 
-    <!-- Contect Start -->
+
+    <!-- Contact Start -->
     <section id="contact">
         <div class="container">
             <div class="row text-center">
-                <div class="col mb-3">
+                <div class="col mb-3" data-aos="fade-down" data-aos-duration="1000">
                     <h2>Contact Me</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-7">
+            <div class="row justify-content-center contact-form">
+                <div class="col-md-9">
 
                     <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
                         <strong>Tararengkyu! </strong> Udah Masuk Bro...
@@ -180,22 +177,22 @@
                     </div>
 
                     <form name="contact-form-bs">
-                        <div class="mb-3">
+                        <div class="mb-3 my-data">
                             <label for="name" class="form-label">Full Name</label>
                             <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
 
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 my-data">
                             <label for="email" class="form-label">Email address</label>
                             <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
 
                         </div>
-                        <div class="mb-3">
+                        <div class="mb-3 my-data">
                             <label for="pesan" class="form-label">Pesan</label>
                             <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+                        <button type="submit" class="btn btn-primary btn-kirim my-data">Submit</button>
                         <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
@@ -211,7 +208,7 @@
             </path>
         </svg>
     </section>
-    <!-- Contect End -->
+    <!-- Contact End -->
 
     <!-- Footer Start -->
     <footer class="text-white text-center pb-4">
@@ -221,9 +218,33 @@
     <!-- Footer End -->
 
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        const myData = document.querySelectorAll('.my-data')
+        
+        myData.forEach((data, x) => {
+            data.dataset.aos = 'fade-right'
+            data.dataset.aosDelay = x * 150
+            data.dataset.aosDuration = 1000
+        })
 
+        // Ini looping untuk yg memiliki banyak element, jadi gausah copas 1/1
+        const galleryImg = document.querySelectorAll('.gallery-img')
+
+        galleryImg.forEach((img, i) => {
+            img.dataset.aos = 'fade-down';
+            img.dataset.aosDelay = i * 100
+            img.dataset.aosDuration = 1000
+        })
+
+        AOS.init();
+    </script>
+
+    <!-- BOOSTRAP -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- TYPED JS -->
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script>
         let typing = new Typed(".specialist", {
@@ -231,8 +252,6 @@
             typeSpeed: 60,
             backSpeed: 35,
             loop: true,
-            // smartBackSpace: true
-
         })
     </script>
 
@@ -268,6 +287,9 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+
+
+
 </body>
 
 </html>

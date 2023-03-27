@@ -22,3 +22,29 @@ section {
 button {
     background-color: #1f6645 !important;
 }
+
+
+/* section #about {
+    margin: 50% 0 !important;
+} */
+
+.gallery-img {
+    width: 100%;
+}
+
+#gallery .row > * {
+    padding: 0;
+}
+
+@media (max-width:768px) {
+    .contact-form {
+        padding: 0 20px;
+    }
+}
+
+@media (min-width:770px) and (max-width:992px){
+    .contact-form{
+        /* padding: 0 -20px; */
+        width: 100%;
+    }
+}
