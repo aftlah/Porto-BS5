@@ -12,7 +12,7 @@
 
 </head>
 
-<body id="home" class="overflow-x-hidden">
+<body id="home"  >
 
     <!-- Navbar Start-->
     <nav class="navbar navbar-expand-lg navbar-dark shadow fixed-top" style="background-color: #1f6645;">
@@ -69,10 +69,15 @@
             <div class="row text-center fw-medium justify-content-center">
                 <div class="col-md-4" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maiores ipsa quasi iste excepturi
-                        quae nisi vero laudantium sequi quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde laudantium earum nulla sequi aperiam, placeat rerum nam veniam, architecto in totam quas repellendus accusantium sit harum doloremque odio aut cum.</p>
+                        quae nisi vero laudantium sequi quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Unde laudantium earum nulla sequi aperiam, placeat rerum nam veniam, architecto in totam quas
+                        repellendus accusantium sit harum doloremque odio aut cum.</p>
                 </div>
                 <div class="col-md-4" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque quam atque in dignissimos itaque praesentium odit. Doloremque, consequuntur! Cumque sunt eaque ut sint placeat quos alias molestias asperiores quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae sapiente incidunt aliquid in
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima neque quam atque in dignissimos
+                        itaque praesentium odit. Doloremque, consequuntur! Cumque sunt eaque ut sint placeat quos alias
+                        molestias asperiores quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae sapiente incidunt aliquid in
                         nesciunt. Voluptate assumenda dolor tempore at natus soluta! Recusandae similique deserunt quam.
                     </p>
                 </div>
@@ -151,6 +156,40 @@
                 </div>
             </div>
         </div>
+
+        <section id="my-keyboard">
+            <div class="container">
+                <div class="row text-center mb-3">
+                    <div class="col">
+                        <h2>My Keyboard</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">Keychron K2</h4>
+                            <img src="img/k1.png" alt="Keyboard" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">Keychron K2</h4>
+                            <img src="img/k1.png" alt="Keyboard" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-3">
+                        <div class="keyboard-box">
+                            <h4 class="keyboard-name">Keychron K2</h4>
+                            <img src="img/k1.png" alt="Keyboard" class="keyboard-img">
+                            <a href="" class="btn btn-light keyboard-detail-btn">Show Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#fff" fill-opacity="1"
                 d="M0,192L30,192C60,192,120,192,180,170.7C240,149,300,107,360,112C420,117,480,171,540,197.3C600,224,660,224,720,202.7C780,181,840,139,900,133.3C960,128,1020,160,1080,144C1140,128,1200,64,1260,48C1320,32,1380,64,1410,80L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
@@ -222,7 +261,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         const myData = document.querySelectorAll('.my-data')
-        
+
         myData.forEach((data, x) => {
             data.dataset.aos = 'fade-right'
             data.dataset.aosDelay = x * 150
@@ -255,6 +294,7 @@
         })
     </script>
 
+    <!-- SPREEDSHEET -->
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzJvbQqx_KUSzE-7NgGbTClFl32dDMeSVuMHzIknAbtV9pVnKHeAgTn6NfU4BLyuj8/exec'
         const form = document.forms['contact-form-bs'];
@@ -288,6 +328,18 @@
         })
     </script>
 
+    <!-- TILT JS -->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+            max: 35,
+            speed: 400,
+            glare: true,
+            gyrocope: true,
+        });
+        
+        
+    </script>
 
 
 </body>
